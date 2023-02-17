@@ -1,0 +1,20 @@
+/**different types of houseplants
+lemon-lime marantha
+calathea orbifolia
+monstera adansonii 
+ficus lyrata
+monstera deliciosa 
+pink eureka lemon tree
+sanseveria masoniana
+**/
+
+CREATE TABLE plants_for_sale (id INTEGER PRIMARY KEY, name TEXT, sun_level INTEGER, price INTEGER, soil_type TEXT, flower_color TEXT);
+
+INSERT INTO plants_for_sale VALUES (1, "lemon-lime marantha", 2, 15, "well draining", "purple");
+INSERT INTO plants_for_sale VALUES (2, "calathea orbifolia", 2, 25, "well-draining", "N/A");
+INSERT INTO plants_for_sale VALUES (3, "monstera adansonii", 5, 20, "climbing-pole", "white or yellow");
+INSERT INTO plants_for_sale VALUES (4, "ficus lyrata", 6, 50, "peat", "cream");
+INSERT INTO plants_for_sale VALUES (5, "monstera deliciosa", 5, 45, "peat", "cream");
+
+
+SELECT * FROM plants_for_sale ORDER BY price;
