@@ -18,5 +18,12 @@ INSERT INTO plants_for_sale VALUES (5, "monstera deliciosa", 5, 45, "peat", "cre
 INSERT INTO plants_for_sale VALUES (6, "pink eureka lemon tree", 9, 50, "clay", "white");
 INSERT INTO plants_for_sale VALUES (7, "sanseveria masoniana", 8, 20, "cactus mix", "white");
 INSERT INTO plants_for_sale VALUES (8, "pothos", 7, 10, "climbing-pole", "cream and purple");
+INSERT INTO plants_for_sale VALUES (9,"african violet", 7, 8, "well-draining", "purple");
+INSERT INTO plants_for_sale VALUES (10, "airplants", 5, 5, "none", "purple");
+INSERT INTO plants_for_sale VALUES (11, "string of pearls", 7, 18, "cactus mix", "white");
+INSERT INTO plants_for_sale VALUES (12, "hoya carnosa", 7, 26, "peat", "white and pink");
+INSERT INTO plants_for_sale VALUES (13, "calathea medallion", 3, 35, "well-draining", "white and purple");
+INSERT INTO plants_for_sale VALUES (14, "pilea pepperomoides", 6, 22, "well-draining", "white");
+INSERT INTO plants_for_sale VALUES (15, "bird of paradise", 7, 32, "peat", "orange");
 
 SELECT * FROM plants_for_sale ORDER BY price;
