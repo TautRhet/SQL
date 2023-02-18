@@ -27,3 +27,5 @@ INSERT INTO plants_for_sale VALUES (14, "pilea pepperomoides", 6, 22, "well-drai
 INSERT INTO plants_for_sale VALUES (15, "bird of paradise", 7, 32, "peat", "orange");
 
 SELECT * FROM plants_for_sale ORDER BY price;
+SELECT name, price FROM plants_for_sale WHERE price<30 ORDER BY name;
+
