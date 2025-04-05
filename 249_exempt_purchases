@@ -1,0 +1,24 @@
+CREATE TABLE 249_exempt_purchases (
+  	exemption_id_number VARCHAR(20)
+  	,transaction_date DATE
+  	,transaction_amount DECIMAL(10,2)
+  	,signature BOOL
+  	,harps_barcode INT(10)
+  );
+  INSERT INTO 249_exempt_purchases (exemption_id_number, transaction_date, transaction_amount, signature, harps_barcode)
+  VALUES
+  	('KSUG4UVY5D', '2025-03-11', 16.96, 1, 0000000000),
+    ('KSLNDGMC5S', '2025-03-11', 65.44, 1, 0000000001),
+    ('KSLNDGMC5S', '2025-03-11', 9.66, 1, 0000000001),
+    ('KSUG4UVY5D', '2025-03-11', 47.41, 1, 0000000000);
+
+    --query--
+
+SELECT *
+FROM 249_exempt_purchases
+LIMIT 5;
+
+SELECT SUM(transaction_amount)
+FROM 249_exempt_purchases
+WHERE harps_barcode = 0
+;
